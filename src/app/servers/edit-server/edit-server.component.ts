@@ -3,7 +3,7 @@ import { ActivatedRoute, Router, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Server } from '../server.model';
 
-import { ServersService } from '../servers.service';
+import { ServerService } from '../server.service';
 import { CanComponentDeactivate } from './can-deactivate-guard.service';
 
 @Component({
@@ -19,7 +19,7 @@ export class EditServerComponent implements OnInit, CanComponentDeactivate {
     changeSaved = false;
 
     constructor(
-        private serversService: ServersService,
+        private serversService: ServerService,
         private route: ActivatedRoute,
         private router: Router
     ) {}

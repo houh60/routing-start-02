@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Server } from '../server.model';
 
-import { ServersService } from '../servers.service';
+import { ServerService } from '../server.service';
 
 @Component({
     selector: 'app-server',
@@ -13,7 +13,7 @@ export class ServerComponent implements OnInit {
     server?: Server;
 
     constructor(
-        private serversService: ServersService,
+        private serversService: ServerService,
         private route: ActivatedRoute,
         private router: Router
     ) {}

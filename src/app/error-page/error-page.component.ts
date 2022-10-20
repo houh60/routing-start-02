@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ErrorPageComponent implements OnInit {
 
     errorMessage = '';
+
     constructor(
         private route: ActivatedRoute
     ) {}
