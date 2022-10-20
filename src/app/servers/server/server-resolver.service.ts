@@ -12,7 +12,7 @@ export class ServerResolver implements Resolve<Server> {
     ) {}
 
     resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Server | Observable<Server> | Promise<Server> {
-        return this.serverService.getServer(+route.params['id']) as Server;
+        return this.serverService.getServer(+route.params['id']) as Server | Observable<Server> | Promise<Server>;
     }
 
 }
